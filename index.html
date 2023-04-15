@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Encriptador ONE</title>
+</head>
+
+<body>
+
+    <div class="loading">
+        <div class="loader"></div>
+    </div>
+
+    <main class="fade-in">
+        <div class="vector fade-in-down">
+            <a href="https://www.aluracursos.com/"><img src="./img/Logo.png" alt=""></a>
+        </div>
+        <div class="firstBox">
+            <div class="">
+                <textarea name="" id="text_to" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="">
+                <img src="./img/Advertencia.png" alt="">
+                <span>Solo letras minúsculas y sin acentos</span>
+            </div>
+            <div class="">
+                <button class="" id="encrypt">Encriptar</button>
+                <button class="" id="decrypt">Desencriptar</button>
+            </div>
+        </div>
+        <div id="secondBox" class="secondBox">
+            <div id="textBox">
+                <p id="textencrypt"></p>
+            </div>
+            <div class="no_content fade-in" id="no_content">
+                <img class="dibujo" id="dibujo" src="./img/Dibujo.png" alt="">
+                <span class="text1" id="text1">Ningún mensaje fue encontrado</span>
+                <span class="text2" id="text2">Ingresa el texto que deseas encriptar o desencriptar.</span>
+            </div>
+
+            <button id="copybutton" class="copybutton">Copiar</button>
+        </div>
+    </main>
+
+
+
+</body>
+
+<script>
+    window.addEventListener("load", function () {
+        document.body.classList.add("loaded");
+    });
+</script>
+
+<script src="./js/index.js"></script>
+
+
+</html>
